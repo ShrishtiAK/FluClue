@@ -144,20 +144,20 @@ var gStep1 = d3
 
 
 var promises = [
-    d3.json("NYcounties.json"),
-    d3.csv("influenza.csv", function (data) {
+    d3.json("data/NYcounties.json"),
+    d3.csv("data/influenza.csv", function (data) {
         fluData.push(data);
     }),
-    d3.csv("predicted_flu.csv", function (data) {
+    d3.csv("data/predicted_flu.csv", function (data) {
         predictedFluData.push(data);
     }),
-    d3.csv("population.csv", function (data) {
+    d3.csv("data/population.csv", function (data) {
         populationData.push(data);
     }),
-    d3.csv("adj_data.csv", function(data){
+    d3.csv("data/adj_data.csv", function(data){
         nbrData.push(data);
     }),
-    d3.csv("county_fips.csv", function(data){
+    d3.csv("data/county_fips.csv", function(data){
         county_fips.push(data);
     })
 ]
